@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Free Estimate | Iowa Sod and Irrigation</title>
+<meta name="description" content="Request a free sod or smart sprinkler estimate from Iowa Sod and Irrigation. Fill out the form and we'll respond the same day across Eastern Iowa.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">🌱 Free, same-day estimates across Eastern Iowa — <a href="tel:3195550123">Call (319) 555-0123</a></div>
+
+<header class="site">
+  <div class="nav">
+    <a class="logo" href="index.html">
+      <span class="mark">🌿</span>
+      <span>Iowa Sod and Irrigation<small>WATERLOO · CEDAR RAPIDS · IOWA CITY</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="main">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub"><a href="#">Services</a>
+            <ul class="submenu">
+              <li><a href="sod-installation.html">Sod Installation</a></li>
+              <li><a href="irrigation.html">Irrigation</a></li>
+              <li><a href="maintenance.html">Maintenance</a></li>
+              <li><a href="establishment.html">Establishment Plan</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a class="btn btn-gold" href="book.html">Get Estimate</a></li>
+        </ul>
+      </nav>
+      <a class="callbtn" href="tel:3195550123">📞 (319) 555-0123</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow" style="color:var(--green-300)">Free estimates · Same-day response</p>
+  <h1>New Sod. Smart Irrigation. One Form.</h1>
+  <p>Need fresh sod, a smart sprinkler system, or both? Fill out the form and we'll reach out right away to walk
+    through your quote.</p>
+</section>
+
+<!-- TRUST STATS -->
+<section class="section tight band">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="num">600+</div><div class="lbl">Projects completed</div></div>
+      <div class="stat"><div class="num">4.9★</div><div class="lbl">Average rating</div></div>
+      <div class="stat"><div class="num">1 day</div><div class="lbl">Most installs</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT HAPPENS -->
+<section class="section">
+  <div class="wrap">
+    <div class="center"><p class="eyebrow">After you submit</p><h2>What Happens Next</h2></div>
+    <div class="steps" style="margin-top:40px">
+      <div class="step"><div class="n"></div><h4>Instant Confirmation</h4><p>You get a confirmation by text and
+        email. Reply with yard photos if you have them.</p></div>
+      <div class="step"><div class="n"></div><h4>We Call You</h4><p>Our team calls to talk through your project.
+        Sod quotes take about 5–10 minutes.</p></div>
+      <div class="step"><div class="n"></div><h4>Accurate Quote</h4><p>You get a clear ballpark price, usually
+        within 5% of the final number.</p></div>
+      <div class="step"><div class="n"></div><h4>Lock Your Date</h4><p>Optional on-site visit for a guaranteed
+        quote, or reserve your install date right away.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section band">
+  <div class="wrap">
+    <div class="form-wrap">
+      <h2>Get Your Free Estimate</h2>
+      <p class="note" style="margin-bottom:22px">Takes 2 minutes. We respond the same day.</p>
+      <form id="estimateForm" action="https://formspree.io/f/mnjyrovw" method="POST">
+        <input type="hidden" name="_subject" value="New estimate request — Iowa Sod and Irrigation">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="First and last name" required>
+        </div>
+        <div class="grid-2" style="gap:18px">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(319) 555-0123" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="address">Project address</label>
+          <input id="address" name="address" type="text" placeholder="Street, city" required>
+        </div>
+        <div class="field">
+          <label for="city">Closest service area</label>
+          <select id="city" name="city" required>
+            <option value="" disabled selected>Select your area</option>
+            <option>Waterloo</option>
+            <option>Cedar Falls</option>
+            <option>Cedar Rapids</option>
+            <option>Iowa City</option>
+            <option>Waverly</option>
+            <option>Other / nearby</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>What can we help you with? <span class="note">(select all that apply)</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="service" value="Sod Installation"> Sod Installation</label>
+            <label><input type="checkbox" name="service" value="Irrigation"> Irrigation</label>
+            <label><input type="checkbox" name="service" value="Maintenance"> Maintenance</label>
+            <label><input type="checkbox" name="service" value="Establishment Plan"> Establishment Plan</label>
+          </div>
+          <p class="note" style="margin-top:8px">Bundle sod + irrigation and save 5% — combo discount applied
+            automatically.</p>
+        </div>
+        <div class="field">
+          <label>Which areas of your lawn need work?</label>
+          <div class="checks">
+            <label><input type="checkbox" name="area" value="Front Yard"> Front Yard</label>
+            <label><input type="checkbox" name="area" value="Backyard"> Backyard</label>
+            <label><input type="checkbox" name="area" value="Side Yard"> Side Yard</label>
+            <label><input type="checkbox" name="area" value="Whole Lawn"> Whole Lawn</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="details">Anything else? <span class="note">(optional)</span></label>
+          <textarea id="details" name="details" rows="3" placeholder="Approx. square footage, fenced yard, timeline, etc."></textarea>
+        </div>
+        <div class="field">
+          <label style="display:flex;gap:10px;font-weight:500;font-size:.9rem">
+            <input type="checkbox" required style="width:auto;margin-top:4px">
+            I agree to receive project updates by text. Message &amp; data rates may apply.
+          </label>
+        </div>
+        <button class="btn btn-gold" type="submit" style="width:100%">Submit My Estimate Request</button>
+        <div class="form-success" id="success">
+          ✅ Thanks! Your request has been sent. We'll be in touch shortly — usually the same day.
+        </div>
+      </form>
+      <p class="note center" style="margin-top:16px">Prefer to call? <a href="tel:3195550123" style="color:var(--green-700);font-weight:700">(319) 555-0123</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap">
+    <div class="center"><p class="eyebrow">Common questions</p><h2>Before You Book</h2></div>
+    <div class="faq" style="margin-top:36px">
+      <details open><summary>How much does sod installation cost?</summary>
+        <div class="ans">Sod installation typically runs a few dollars per square foot, fully installed — covering
+          old lawn removal, soil grading, premium sod, labor, rolling, starter fertilizer, and cleanup. Your phone
+          estimate gives you a ballpark within about 5% of the final price.</div></details>
+      <details><summary>How much does a smart irrigation system cost?</summary>
+        <div class="ans">Pricing depends on lot size, number of zones, and layout. We'll size the system to your
+          yard and give you a clear quote that includes design, installation, heads, controller, and setup.</div></details>
+      <details><summary>How long does installation take?</summary>
+        <div class="ans">Most sod installs finish in a single day, with ground prep being the bulk of the work.
+          Your new lawn is ready for normal use within a few weeks. Irrigation also installs in about a day for
+          most homes.</div></details>
+      <details><summary>What happens after I submit this form?</summary>
+        <div class="ans">You get an instant confirmation, then a call from our team — usually within a few hours.
+          Reply with photos of your yard to help us give the most accurate quote.</div></details>
+      <details><summary>Do you offer a combo discount for sod + irrigation?</summary>
+        <div class="ans">Yes. Book sod and irrigation together and receive 5% off the total project cost — plus one
+          crew, one timeline, and less disruption to your yard.</div></details>
+      <details><summary>What areas do you serve?</summary>
+        <div class="ans">We serve Waterloo, Cedar Falls, Cedar Rapids, Iowa City, Waverly, and nearby communities.
+          Not sure if we cover you? Submit the form and we'll let you know right away.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready to Get Started?</h2>
+  <p>Scroll up to fill out the form, or give us a call — we respond the same day.</p>
+  <a class="btn btn-gold" href="tel:3195550123">Call (319) 555-0123</a>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="logo" style="color:#fff"><span class="mark">🌿</span><span>Iowa Sod and Irrigation</span></div>
+      <p style="margin-top:14px">Fresh-cut sod and smart irrigation for Eastern Iowa homeowners.</p>
+      <p style="margin-top:10px">📞 (319) 555-0123<br>✉️ info@iowasodandirrigation.com</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="sod-installation.html">Sod Installation</a></li>
+        <li><a href="irrigation.html">Irrigation</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="establishment.html">Establishment Plan</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Service Areas</h4>
+      <ul><li>Waterloo</li><li>Cedar Falls</li><li>Cedar Rapids</li><li>Iowa City</li><li>Waverly</li></ul>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Iowa Sod and Irrigation. All rights reserved. (Demo site — placeholder content & images.)</div>
+</footer>
+
+<script>
+  // Submit to Formspree via fetch so the visitor stays on this page.
+  var form = document.getElementById('estimateForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(r){
+      if (r.ok){
+        document.getElementById('success').style.display='block';
+        btn.textContent = 'Request Sent ✓';
+        form.reset();
+        document.getElementById('success').scrollIntoView({behavior:'smooth',block:'center'});
+      } else {
+        btn.textContent = 'Submit My Estimate Request';
+        btn.disabled = false;
+        alert('Sorry, something went wrong. Please call us at (319) 555-0123.');
+      }
+    }).catch(function(){
+      btn.textContent = 'Submit My Estimate Request';
+      btn.disabled = false;
+      alert('Sorry, something went wrong. Please call us at (319) 555-0123.');
+    });
+  });
+  document.querySelectorAll('#menu a').forEach(function(a){
+    a.addEventListener('click',function(){if(a.getAttribute('href')!=='#')document.getElementById('menu').classList.remove('open')});
+  });
+</script>
+</body>
+</html>
