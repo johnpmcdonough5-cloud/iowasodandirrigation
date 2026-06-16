@@ -45,34 +45,46 @@ Everything is plain text you can edit:
    inline style, e.g.
    `<div class="pic" style="background:url('images/front-yard.jpg') center/cover"></div>`
    and put your photos in an `images/` folder.
-5. **The form** on `book.html` is a demo (shows a success message, sends nothing).
-   To collect real submissions, sign up at https://formspree.io and set the form's
-   `action` to your Formspree URL — see comments in that file.
+5. **The form** on `book.html` is already wired to Formspree
+   (`https://formspree.io/f/mnjyrovw`). The first submission triggers a one-time
+   verification email from Formspree — click that link once to activate it.
 
 ---
 
-## Publish free with GitHub Pages
+## Files to upload to GitHub
 
-1. Create a free account at https://github.com
-2. **New repository** → name it e.g. `iowa-sod` → set **Public** → Create.
-3. **Add file → Upload files** → drag in *all* the files (`index.html`,
-   `book.html`, the four service pages, `gallery.html`, `style.css`) → **Commit**.
-4. **Settings → Pages** → Source: *Deploy from a branch* → Branch: `main` →
-   Folder: `/ (root)` → **Save**.
-5. Wait ~1 minute. Your site is live at
-   `https://YOUR-USERNAME.github.io/iowa-sod/`
+Upload **all** of these to the repo (root level):
 
-Re-upload any changed file to update the live site.
+- `index.html`, `book.html`
+- `sod-installation.html`, `irrigation.html`, `maintenance.html`, `establishment.html`
+- `gallery.html`, `blog.html`, `blog-post.html`
+- `style.css`
+- `CNAME`  ← tells GitHub your custom domain is `iowasodandirrigation.com`
 
-### Custom domain (optional)
+---
 
-In **Settings → Pages → Custom domain**, enter a domain you own and add the DNS
-records GitHub shows you at your registrar. GitHub Pages serves it free with HTTPS.
+## Go-live checklist
+
+1. **Upload files.** Repo → *Add file → Upload files* → drag everything above → Commit.
+2. **Turn on Pages.** Settings → Pages → Source: *Deploy from a branch* →
+   Branch `main`, folder `/ (root)` → Save. Confirm the temporary
+   `yourname.github.io/...` URL loads.
+3. **Custom domain.** Because the `CNAME` file is included, GitHub should pick up
+   `iowasodandirrigation.com` automatically. If not, set it under Settings → Pages →
+   Custom domain.
+4. **DNS (already done in Squarespace):**
+   - Four A records on `@` → 185.199.108.153 / .109.153 / .110.153 / .111.153
+   - CNAME on `www` → `YOUR-USERNAME.github.io`
+5. **Wait for the green check**, then tick **Enforce HTTPS**.
+6. **Test live:** load both `iowasodandirrigation.com` and the `www` version,
+   submit a test on the booking form, and check the mobile menu on a phone.
+7. **Replace placeholders** before promoting the site: phone `(319) 555-0123`,
+   email, address, and the marketing stats (600+ lawns / 4.9★).
 
 ---
 
 ## Good to know
 
 GitHub Pages serves **static files only** — no server, no database. That's perfect
-for this site. The only piece that needs a third-party service is the contact form
-(use Formspree's free tier, linked above).
+for this site. The booking form runs through Formspree (free tier), and DNS/HTTPS
+for your domain are handled free by GitHub Pages.
