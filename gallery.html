@@ -41,23 +41,53 @@
 <section class="page-hero">
   <p class="eyebrow" style="color:var(--green-300)">Our work</p>
   <h1>Lawn Transformation Gallery</h1>
-  <p>A look at projects across Eastern Iowa. (Placeholder images — swap in your own photos before going live.)</p>
+  <p>Real before-and-after transformations across Eastern Iowa. Drag your eyes left to right — bare yard to lush lawn.</p>
 </section>
+
+<style>
+  .ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:22px}
+  .ba-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .ba-pair{display:flex}
+  .ba-pair .shot{flex:1;height:200px;position:relative;background-size:cover;background-position:center}
+  .ba-pair .shot.before{background-color:#8a6d4b}
+  .ba-pair .shot.after{background-color:#2e7d32}
+  .ba-pair .shot span{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,.6);color:#fff;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em}
+  .ba-card figcaption{padding:13px 16px;font-weight:600;color:var(--muted);font-size:.92rem}
+</style>
 
 <section class="section">
   <div class="wrap">
-    <div class="gallery">
-      <figure><div class="ph fill-a">Front Yard Sod — Waterloo</div><figcaption>New sod install · Front yard</figcaption></figure>
-      <figure><div class="ph fill-b">Backyard Renewal — Cedar Falls</div><figcaption>Full backyard sod replacement</figcaption></figure>
-      <figure><div class="ph fill-c">Corner Lot — Cedar Rapids</div><figcaption>Sod + grading project</figcaption></figure>
-      <figure><div class="ph fill-d">Smart Sprinklers — Iowa City</div><figcaption>Irrigation system install</figcaption></figure>
-      <figure><div class="ph fill-e">Curb Appeal — Waverly</div><figcaption>Front yard transformation</figcaption></figure>
-      <figure><div class="ph fill-f">Side Yard — Waterloo</div><figcaption>Drainage grading + sod</figcaption></figure>
-      <figure><div class="ph fill-c">New Build Lawn — Cedar Falls</div><figcaption>New construction sod</figcaption></figure>
-      <figure><div class="ph fill-a">Established Lawn — Cedar Rapids</div><figcaption>5-week establishment result</figcaption></figure>
-      <figure><div class="ph fill-b">Maintained Lawn — Iowa City</div><figcaption>GreenRoot maintenance plan</figcaption></figure>
+    <div class="ba-grid">
+      <figure class="ba-card">
+        <div class="ba-pair">
+          <div class="shot before" style="background-image:url('images/white-house-before.jpg')"><span>Before</span></div>
+          <div class="shot after" style="background-image:url('images/white-house-after.jpg')"><span>After</span></div>
+        </div>
+        <figcaption>New front lawn install — Waterloo</figcaption>
+      </figure>
+      <figure class="ba-card">
+        <div class="ba-pair">
+          <div class="shot before" style="background-image:url('images/backyard-fence-before.jpg')"><span>Before</span></div>
+          <div class="shot after" style="background-image:url('images/backyard-fence-after.jpg')"><span>After</span></div>
+        </div>
+        <figcaption>Backyard sod &amp; grading — Cedar Rapids</figcaption>
+      </figure>
+      <figure class="ba-card">
+        <div class="ba-pair">
+          <div class="shot before" style="background-image:url('images/deck-before.jpg')"><span>Before</span></div>
+          <div class="shot after" style="background-image:url('images/deck-after.jpg')"><span>After</span></div>
+        </div>
+        <figcaption>Backyard renewal — Iowa City</figcaption>
+      </figure>
+      <figure class="ba-card">
+        <div class="ba-pair">
+          <div class="shot before" style="background-image:url('images/hottub-before.jpg')"><span>Before</span></div>
+          <div class="shot after" style="background-image:url('images/hottub-after.jpg')"><span>After</span></div>
+        </div>
+        <figcaption>Side yard transformation — Iowa City</figcaption>
+      </figure>
     </div>
-    <div class="center" style="margin-top:40px">
+    <div class="center" style="margin-top:44px">
       <p class="note" style="margin-bottom:16px">Want to see your yard here next?</p>
       <a class="btn" href="book.html">Get a Free Quote</a>
     </div>

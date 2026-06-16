@@ -40,11 +40,11 @@ Everything is plain text you can edit:
 2. **Copy** — edit the headings and paragraphs directly in each `.html` file.
 3. **Colors** — change the variables at the top of `style.css` (`--green-700`,
    `--gold`, etc.). Every element pulls from them.
-4. **Real photos** — the colored blocks use CSS classes like `fill-a`, `fill-b`,
-   and `.thumb` / `.pic` / `.ph`. To use a real image, replace the class with an
-   inline style, e.g.
-   `<div class="pic" style="background:url('images/front-yard.jpg') center/cover"></div>`
-   and put your photos in an `images/` folder.
+4. **Real photos** — the site is already wired to an `images/` folder. Save your
+   photos there using the exact names listed in `images/IMAGE-MAP.md` and they
+   appear automatically (a green block shows until a file exists, so nothing
+   looks broken). To add more later, use an inline style like
+   `<div class="pic" style="background:#2e7d32 url('images/your-photo.jpg') center/cover"></div>`.
 5. **The form** on `book.html` is already wired to Formspree
    (`https://formspree.io/f/mnjyrovw`). The first submission triggers a one-time
    verification email from Formspree — click that link once to activate it.
@@ -60,6 +60,10 @@ Upload **all** of these to the repo (root level):
 - `gallery.html`, `blog.html`, `blog-post.html`
 - `style.css`
 - `CNAME`  ← tells GitHub your custom domain is `iowasodandirrigation.com`
+- the `images/` folder (with your photos saved per `images/IMAGE-MAP.md`)
+
+**Do NOT upload** the `_local-only/` folder — those are reference/helper pages
+just for you, not part of the website.
 
 ---
 
