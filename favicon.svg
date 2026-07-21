@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1b5e20"/>
+  <!-- grass blades -->
+  <path d="M14 52 C14 40 10 34 8 30 C14 33 18 40 18 47 Z" fill="#66bb6a"/>
+  <path d="M22 52 C21 36 16 28 13 22 C21 27 26 37 26 46 Z" fill="#81c784"/>
+  <path d="M32 52 C32 32 28 22 26 14 C34 22 38 34 37 46 Z" fill="#a5d6a7"/>
+  <path d="M41 52 C43 38 48 30 52 24 C46 34 45 42 45 48 Z" fill="#81c784"/>
+  <path d="M49 52 C50 42 54 36 58 31 C53 39 53 46 53 50 Z" fill="#66bb6a"/>
+  <!-- water drop -->
+  <path d="M47 10 C50 15 53 18.5 53 22 a6 6 0 0 1 -12 0 C41 18.5 44 15 47 10 Z" fill="#4fc3f7"/>
+  <!-- soil line -->
+  <rect x="8" y="51" width="48" height="5" rx="2.5" fill="#6d4c41"/>
+</svg>

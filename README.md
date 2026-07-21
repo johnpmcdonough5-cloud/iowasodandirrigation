@@ -62,6 +62,7 @@ Upload **all** of these to the repo (root level):
   `sod-vs-seed.html`, `winter-lawn-prep.html`
 - `style.css`
 - `CNAME`  ← tells GitHub your custom domain is `iowasodandirrigation.com`
+- `favicon.svg`, `sitemap.xml`, `robots.txt`  ← SEO files
 - the `images/` folder (with your photos saved per `images/IMAGE-MAP.md`)
 
 **Do NOT upload** the `_local-only/` folder — those are reference/helper pages
