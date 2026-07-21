@@ -58,6 +58,8 @@ Upload **all** of these to the repo (root level):
 - `index.html`, `book.html`
 - `sod-installation.html`, `irrigation.html`, `maintenance.html`, `establishment.html`
 - `gallery.html`, `blog.html`, `blog-post.html`
+- `sprinkler-wasting-water.html`, `first-mow-after-sod.html`, `watering-new-sod-schedule.html`,
+  `sod-vs-seed.html`, `winter-lawn-prep.html`
 - `style.css`
 - `CNAME`  ← tells GitHub your custom domain is `iowasodandirrigation.com`
 - the `images/` folder (with your photos saved per `images/IMAGE-MAP.md`)
