@@ -82,8 +82,7 @@
     <div class="form-wrap">
       <h2>Get Your Free Estimate</h2>
       <p class="note" style="margin-bottom:22px">Takes 2 minutes. We respond the same day.</p>
-      <form id="estimateForm" action="https://formspree.io/f/mnjyrovw" method="POST">
-        <input type="hidden" name="_subject" value="New estimate request — Iowa Sod and Irrigation">
+      <form id="estimateForm" action="https://services.leadconnectorhq.com/hooks/Gvvmfiz9m5qveMekUyjZ/webhook-trigger/cef7dcca-f78a-4b9f-ab06-4349220fb418" method="POST">
         <div class="field">
           <label for="name">Your name</label>
           <input id="name" name="name" type="text" placeholder="First and last name" required>
@@ -215,17 +214,36 @@
 </footer>
 
 <script>
-  // Submit to Formspree via fetch so the visitor stays on this page.
+  // Submit to the GoHighLevel inbound webhook via fetch so the visitor stays on this page.
   var form = document.getElementById('estimateForm');
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var btn = form.querySelector('button[type=submit]');
     btn.textContent = 'Sending…';
     btn.disabled = true;
+
+    var nameParts = form.name.value.trim().split(/\s+/);
+    var services = Array.from(form.querySelectorAll('input[name="service"]:checked')).map(function(el){return el.value;});
+    var areas = Array.from(form.querySelectorAll('input[name="area"]:checked')).map(function(el){return el.value;});
+
+    var payload = {
+      firstName: nameParts[0] || '',
+      lastName: nameParts.slice(1).join(' ') || '',
+      full_name: form.name.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      address: form.address.value,
+      city: form.city.value,
+      services: services,
+      areas: areas,
+      details: form.details.value,
+      source: 'Website - Get Estimate Form'
+    };
+
     fetch(form.action, {
       method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
     }).then(function(r){
       if (r.ok){
         document.getElementById('success').style.display='block';
