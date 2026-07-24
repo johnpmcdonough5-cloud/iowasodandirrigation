@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iowasodandirrigation.com/sitemap.xml
+# Block nothing — this is a small marketing site and we want it fully indexed.
+
+Sitemap: https://www.calicoolsprayfoam.com/sitemap.xml

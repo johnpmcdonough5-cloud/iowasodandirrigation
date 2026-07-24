@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of San Diego homes at golden hour with palm trees">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08222e"/>
+      <stop offset="0.55" stop-color="#0f4152"/>
+      <stop offset="0.8" stop-color="#2f6d74"/>
+      <stop offset="1" stop-color="#5f8f83"/>
+    </linearGradient>
+    <radialGradient id="hsun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6bd"/><stop offset="0.35" stop-color="#ffcf8f"/>
+      <stop offset="0.7" stop-color="#f4a15c" stop-opacity="0.55"/><stop offset="1" stop-color="#f4a15c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hhillB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#164a56"/><stop offset="1" stop-color="#10333d"/></linearGradient>
+    <linearGradient id="hhillF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e2f39"/><stop offset="1" stop-color="#0a2029"/></linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1440" height="720" fill="url(#hsky)"/>
+
+  <!-- sun + glow -->
+  <circle cx="1120" cy="235" r="300" fill="url(#hsun)"/>
+  <circle cx="1120" cy="235" r="82" fill="#ffe9c6"/>
+
+  <!-- faint stars upper-left -->
+  <g fill="#bfe0e6" opacity="0.5">
+    <circle cx="120" cy="90" r="2"/><circle cx="240" cy="150" r="1.6"/><circle cx="360" cy="80" r="1.6"/>
+    <circle cx="60" cy="200" r="1.6"/><circle cx="300" cy="230" r="1.4"/><circle cx="180" cy="120" r="1.4"/>
+  </g>
+
+  <!-- distant ridge -->
+  <path d="M0 430 Q 260 360 520 410 T 1040 400 T 1440 420 V720 H0 Z" fill="url(#hhillB)"/>
+  <!-- nearer ridge -->
+  <path d="M0 500 Q 320 440 680 490 T 1440 500 V720 H0 Z" fill="url(#hhillF)"/>
+
+  <!-- house cluster (mid-right, lit windows) -->
+  <g>
+    <!-- house A -->
+    <g>
+      <path d="M840 520 L930 452 L1020 520 Z" fill="#0c2c36"/>
+      <rect x="866" y="518" width="128" height="120" fill="#103440"/>
+      <rect x="892" y="548" width="30" height="30" rx="3" fill="#ffcf87" opacity="0.92"/>
+      <rect x="938" y="548" width="30" height="30" rx="3" fill="#ffb867" opacity="0.85"/>
+      <rect x="912" y="592" width="36" height="46" rx="3" fill="#ffcf87" opacity="0.8"/>
+    </g>
+    <!-- house B (taller, behind) -->
+    <g>
+      <path d="M1010 500 L1092 440 L1174 500 Z" fill="#0a2630"/>
+      <rect x="1032" y="498" width="120" height="140" fill="#0e2f3a"/>
+      <rect x="1056" y="528" width="28" height="28" rx="3" fill="#ffc981" opacity="0.85"/>
+      <rect x="1100" y="528" width="28" height="28" rx="3" fill="#ffcf87" opacity="0.9"/>
+      <rect x="1056" y="576" width="28" height="28" rx="3" fill="#ffb867" opacity="0.8"/>
+      <rect x="1100" y="576" width="28" height="28" rx="3" fill="#ffcf87" opacity="0.85"/>
+    </g>
+    <!-- house C (front left of cluster) -->
+    <g>
+      <path d="M700 545 L772 492 L844 545 Z" fill="#0d2e39"/>
+      <rect x="722" y="543" width="100" height="98" fill="#123742"/>
+      <rect x="742" y="568" width="26" height="26" rx="3" fill="#ffcf87" opacity="0.9"/>
+      <rect x="782" y="568" width="26" height="26" rx="3" fill="#ffb867" opacity="0.82"/>
+    </g>
+  </g>
+
+  <!-- palm trees (right foreground silhouettes) -->
+  <g fill="#08202a">
+    <!-- palm 1 -->
+    <path d="M1268 720 C 1262 600 1258 500 1256 430 C 1252 470 1250 540 1252 620 C 1250 660 1256 700 1258 720 Z"/>
+    <g stroke="#08202a" stroke-width="8" fill="none" stroke-linecap="round">
+      <path d="M1256 430 C 1196 418 1152 440 1126 478"/>
+      <path d="M1256 430 C 1206 398 1176 372 1150 366"/>
+      <path d="M1256 430 C 1234 390 1242 354 1248 320"/>
+      <path d="M1256 430 C 1290 392 1320 370 1352 366"/>
+      <path d="M1256 430 C 1312 416 1356 440 1384 478"/>
+      <path d="M1256 430 C 1220 412 1190 428 1170 458"/>
+      <path d="M1256 430 C 1294 412 1326 428 1348 458"/>
+    </g>
+    <circle cx="1258" cy="428" r="8"/>
+    <!-- palm 2 (smaller, further right) -->
+    <path d="M1388 720 C 1384 640 1382 560 1382 500 C 1379 534 1378 590 1380 640 C 1379 675 1384 705 1385 720 Z"/>
+    <g stroke="#08202a" stroke-width="6" fill="none" stroke-linecap="round">
+      <path d="M1382 500 C 1344 486 1314 500 1296 528"/>
+      <path d="M1382 500 C 1352 472 1338 444 1342 416"/>
+      <path d="M1382 500 C 1376 466 1382 442 1388 418"/>
+      <path d="M1382 500 C 1414 474 1432 452 1436 424"/>
+      <path d="M1382 500 C 1420 488 1444 502 1440 526"/>
+    </g>
+    <circle cx="1383" cy="499" r="6"/>
+  </g>
+
+  <!-- foreground road / ground -->
+  <path d="M0 640 Q 400 610 900 645 T 1440 650 V720 H0 Z" fill="#081820"/>
+  <g stroke="#22d3ee" stroke-width="2" opacity="0.14"><path d="M0 668 Q 500 640 1000 672 T 1440 672"/></g>
+</svg>
