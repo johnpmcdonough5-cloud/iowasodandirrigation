@@ -1,6 +1,15 @@
+# This repository is superseded. The live Iowa Sod and Irrigation site is
+# served elsewhere; the CNAME was removed on 2026-07-25. What GitHub Pages
+# still serves from here is an unconverted San Diego spray-foam template.
+#
+# Do ONE of these, not half of each:
+#
+#   A (recommended) Settings -> Pages -> Source: None. The URLs 404 and drop
+#     out of the index on their own. The noindex tags below become moot.
+#
+#   B (interim, if Pages has to stay up) leave it exactly as it is. Crawling
+#     is allowed on purpose so the noindex tag on each page can be fetched
+#     and acted on; blocking here instead would freeze the old URLs in the
+#     index rather than removing them.
 User-agent: *
 Allow: /
-
-# Block nothing — this is a small marketing site and we want it fully indexed.
-
-Sitemap: https://www.calicoolsprayfoam.com/sitemap.xml

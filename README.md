@@ -1,3 +1,13 @@
+> **SUPERSEDED — do not deploy.**
+> The live site is https://www.iowasodandirrigation.com/ and is served elsewhere.
+> Everything below describes the San Diego spray-foam template this repo was
+> built from; the homepage, about, services, contact, service-areas, resources,
+> privacy and 404 pages were never converted to Iowa sod and irrigation.
+> Fix: Settings -> Pages -> Source: None. The pages then 404 and leave the index
+> on their own. Until that is done, every page here carries a noindex tag and
+> robots.txt deliberately allows crawling so that tag can be read — see
+> robots.txt before changing either one.
+
 # Cali-Cool Spray Foam — Website
 
 A fast, SEO-optimized, fully static marketing website for **Cali-Cool Spray Foam**, a spray foam insulation contractor in San Diego, California. Built with plain HTML + CSS + a little vanilla JavaScript — no build step, no dependencies — so it hosts perfectly on **GitHub Pages** (or any static host).
